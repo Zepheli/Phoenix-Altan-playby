@@ -23,7 +23,7 @@
 <br>
 <div class="text">
 <font color="#000000" face='verdana' style="font-family: 'Tapestry', cursive;font-size:30px;">
-
+Before you stands a kitsune as white as snow, a gentle smile resting upon her face. Adorning robes of the asperan faith with a caring presence around her. Soft sapphire eyes noticeable with her light skin. Gaze upon you.
 </font>
 </div>
 <br>
@@ -42,12 +42,13 @@ body{
 }
 
 .text_part{
-
+padding: 10px;
 }
 
 .text_part .text{
-/*height: 20vh;*/
+height: 20vh;
 overflow-y:auto;
+text-align: left;
 }
 
 
@@ -100,10 +101,11 @@ overflow-y:auto;
 <script>
 $("#dpic1").hover(function(){
 $('#pic').hide();
-  $('#pic2').fadeTo(1000, 500);
+  //$('#pic2').fadeTo(1000, 500);
+  $('#pic2').show();
   }, function(){
   $('#pic2').hide();
-  $('#pic').fadeTo(1000, 500);
+  $('#pic').show();
 });
 $(document).ready(function(){
 
